@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Di Fiore in Fiore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">𝓓𝓕</div>
+                <div class="logo-text">Di Fiore in Fiore</div>
+            </a>
+            
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"> Inicio</a></li>
+                    <li><a href="servicios.html"> Servicios</a></li>
+                    <li><a href="galeria.html" class="active"> Galería</a></li>
+                    <li><a href="nosotros.html"> Nosotros</a></li>
+                    <li><a href="contacto.html"> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Hero Section -->
+    <section class="hero hero-internal">
+        <div class="hero-content scroll-reveal">
+            <h1>Galería de Creaciones que Inspiran</h1>
+            <p>Sumérgete en un mundo de belleza floral. Cada arreglo es una obra de arte diseñada con pasión para tus momentos más especiales. Explora nuestras colecciones y encuentra la inspiración perfecta.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-container">
+        <div class="section-title scroll-reveal">
+        <h2>Explora Nuestras Colecciones</h2>
+        <p>Encuentra el arreglo perfecto para cada ocasión. Navega por nuestras categorías y déjate cautivar por la belleza de nuestras creaciones.</p>
+    </div>
+   
+
+    <!-- Gallery Section -->
+    <class="gallery">
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <!-- Bouquet Clásico -->
+                <div class="gallery-item scroll-reveal" data-category="bouquets" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="Basico.jpg" alt="Bouquet Clásico Icon" class="gallery-icon-img"></div>
+                        <div class="title">Bouquet Clásico</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Bouquet Clásico: Elegancia Atemporal</h3>
+                        <p>Un símbolo de amor y pasión, nuestro Bouquet Clásico es la elección perfecta para celebrar momentos inolvidables. Rosas rojas frescas, cuidadosamente seleccionadas y envueltas con un lazo de seda, garantizan una impresión duradera.</p>
+                        <div class="price">Desde $120 MXN</div>
+                        <ul class="features">
+                            <li>Rosas frescas de la más alta calidad</li>
+                            <li>Diseño artesanal que realza la belleza natural</li>
+                            <li>Ideal para aniversarios, declaraciones de amor o simplemente para sorprender</li>
+                            <li>Entrega a domicilio para tu comodidad</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Ordenar Ahora</a>
+                    </div>
+                </div>
+                <!-- Bouquet Mediano-->
+                <div class="gallery-item scroll-reveal" data-category="bouquets" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="mediano.jpg" alt="Estilo Silvestre Icon" class="gallery-icon-img"></div>
+                        <div class="title">Bouquet Mediano</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Bouquet Mediano: La Belleza Natural en su Máxima Expresión</h3>
+                        <p>Para los amantes de lo auténtico y lo orgánico, nuestros arreglos de estilo silvestre capturan la esencia de la naturaleza. Flores y follajes recolectados con esmero para un look fresco y bohemio.</p>
+                        <div class="price">Desde $550 MXN</div>
+                        <ul class="features">
+                            <li>Composiciones orgánicas y llenas de vida</li>
+                            <li>Ideal para eventos al aire libre o decoración con encanto rústico</li>
+                            <li>Conexión con la naturaleza en cada pétalo</li>
+                            <li>Opciones sostenibles y eco-amigables</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Explorar Estilo</a>
+                    </div>
+                </div>
+                <!-- Bouquet Premium -->
+                <div class="gallery-item scroll-reveal" data-category="bouquets" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="premium.jpg" alt="Girasoles Radiantes Icon" class="gallery-icon-img"></div>
+                        <div class="title">Bouquet Premium</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Bouquet Premium: Alegría y Optimismo en Cada Pétalo</h3>
+                        <p>Ilumina el día de alguien con la energía vibrante de nuestros girasoles. Un bouquet que irradia felicidad y positividad, ideal para celebrar la amistad, el éxito o simplemente para levantar el ánimo.</p>
+                        <div class="price">Desde $750 MXN</div>
+                        <ul class="features">
+                            <li>Girasoles frescos y llenos de vida</li>
+                            <li>Combinaciones con flores complementarias para un efecto deslumbrante</li>
+                            <li>Perfectos para cumpleaños, graduaciones o para decir "¡ánimo!"</li>
+                            <li>Entrega rápida para que la alegría no espere</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+
+
+                <!-- Decoración Funebre -->
+                <div class="gallery-item scroll-reveal" data-category="bodas" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="WhatsApp Image 2025-06-11 at 10.18.12_d346c255.jpg" alt="Decoración Funebre Icon" class="gallery-icon-img"></div>
+                        <div class="title">Decoración Funebre</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Decoración Funebre: Tu Sueño Floral Hecho Realidad</h3>
+                        <p>Transformamos tu boda en un cuento de hadas con decoraciones florales que capturan la esencia de tu amor. Desde el altar hasta los centros de mesa, cada detalle es diseñado para reflejar tu estilo único.</p>
+                        <div class="price">Desde $2,500 MXN</div>
+                        <ul class="features">
+                            <li>Diseño floral personalizado para tu visión nupcial</li>
+                            <li>Asesoramiento experto para cada etapa de la planificación</li>
+                            <li>Flores frescas y de temporada para un ambiente mágico</li>
+                            <li>Instalación y desmontaje profesional</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Cotizar Evento</a>
+                    </div>
+                </div>
+
+                <!-- Centro de Mesa -->
+                <div class="gallery-item scroll-reveal" data-category="eventos" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="WhatsApp Image 2025-06-11 at 10.21.00_7a14e630.jpg" alt="Centro de Mesa Icon" class="gallery-icon-img"></div>
+                        <div class="title">Centro de Mesa</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Centros de Mesa: El Toque Perfecto para Cada Celebración</h3>
+                        <p>Nuestros centros de mesa son más que un adorno; son el corazón de tu evento. Diseños vibrantes y elegantes que complementan cualquier ambiente, creando una atmósfera acogedora y sofisticada.</p>
+                        <div class="price">Desde $450 MXN</div>
+                        <ul class="features">
+                            <li>Variedad de estilos: modernos, rústicos, clásicos</li>
+                            <li>Flores frescas y duraderas</li>
+                            <li>Perfectos para cenas, reuniones familiares o eventos corporativos</li>
+                            <li>Personalización según tu paleta de colores y temática</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Ver Opciones</a>
+                    </div>
+                </div>
+
+                
+                
+
+                <!-- Tarjetas Personalizadas -->
+                <div class="gallery-item scroll-reveal" data-category="regalos" onclick="showProductDetails(this)">
+                    <div class="gallery-front">
+                        <div class="icon"><img src="WhatsApp Image 2025-06-11 at 10.21.00_ba18c074.jpg" alt="Arreglos Especiales Icon" class="gallery-icon-img"></div>
+                        <div class="title">Tarjetas Personalizadas</div>
+                    </div>
+                    <div class="gallery-back" style="display: none;">
+                        <h3>Tarjetas Personalizadas: Diseños Exclusivos para Momentos Únicos</h3>
+                        <p>Cuando la ocasión lo exige, creamos arreglos florales que son verdaderas obras de arte. Cuéntanos tu visión y nosotros la transformaremos en una creación floral inolvidable, hecha a tu medida.</p>
+                        <div class="price">Desde $1,200 MXN</div>
+                        <ul class="features">
+                            <li>Diseño 100% personalizado y exclusivo</li>
+                            <li>Flores exóticas y de importación</li>
+                            <li>Atención al detalle en cada elemento</li>
+                            <li>Perfectos para propuestas, celebraciones de lujo o regalos corporativos</li>
+                        </ul>
+                        <a href="contacto.html" class="btn">Crear Especial</a>
+                    </div>
+                </div>
+
+                                
+              
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">&times;</button>
+            <div id="lightbox-body">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content scroll-reveal">
+            <h2>¿Listo para transformar tus momentos con flores?</h2>
+            <p>En Di Fiore in Fiore, cada flor es una promesa de belleza y emoción. Contáctanos hoy y déjanos crear la obra floral perfecta para ti.</p>
+            <a href="contacto.html" class="btn-primary">
+                <span></span> Diseña tu Momento Floral
+            </a>
+        </div>
+    </section>
+
+    <script src="Scrib.js"></script>
+</body>
+</html>
